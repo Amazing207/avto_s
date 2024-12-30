@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобіль</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .car-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .car-details {
+            border: 2px solid #444;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .car-details h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .car-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .car-details li {
+            padding: 5px 0;
+        }
+
+        .panorama {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .panorama img {
+            width: 200%;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Зображення авто -->
+    <img src="car-image.jpg" alt="Автомобіль" class="car-image">
+
+    <!-- Характеристики авто -->
+    <div class="car-details">
+        <h3>Характеристики автомобіля</h3>
+        <ul>
+            <li>Марка: Tesla</li>
+            <li>Модель: Model S</li>
+            <li>Рік випуску: 2023</li>
+            <li>Кількість місць: 5</li>
+            <li>Двигун: Електричний</li>
+            <li>Пробіг на одному заряді: 650 км</li>
+            <li>Час розгону до 100 км/год: 2.4 секунди</li>
+        </ul>
+    </div>
+
+    <!-- Панорамне зображення -->
+    <div class="panorama">
+        <img src="panorama-image.jpg" alt="Панорама авто">
+    </div>
+</div>
+
+</body>
+</html>

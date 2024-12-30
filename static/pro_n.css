@@ -1,0 +1,22 @@
+body {
+background-color: #a6a6a6;
+}
+main  {
+background-color: #a6a6a6;
+}
+
+.btn.btn-primary
+ {
+background-color: #a6a6a6;
+color:white;
+border:2px solid white;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.btn.btn-primary:hover{
+background-color: #8f8f8f;
+}
+main .reviews-container{
+background-color: #a6a6a6;
+}
